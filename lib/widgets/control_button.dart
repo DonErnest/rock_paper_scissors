@@ -3,15 +3,22 @@ import 'package:rock_paper_scissors/enums.dart';
 
 class ControlButtonWidget extends StatelessWidget {
   final Move userMove;
+  final void Function(Move choice) onPressed;
 
-  const ControlButtonWidget({super.key, required this.userMove});
+  const ControlButtonWidget({
+    super.key,
+    required this.userMove,
+    required this.onPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 0),
       child: ElevatedButton(
-        onPressed: () => {},
+        onPressed: () => {
+          onPressed(userMove),
+        },
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(5),
