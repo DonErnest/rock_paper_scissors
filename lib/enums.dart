@@ -7,3 +7,7 @@ enum Move {
 
   const Move(this.img);
 }
+
+enum Result {
+  userVictory, opponentVictory, drawn;
+}
