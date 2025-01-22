@@ -1,7 +1,14 @@
+enum GameState {
+  gaming, browsingStats;
+}
+
+
 enum Move {
-  rock("rock.webp"),
-  paper("paper.webp"),
-  scissors("scissors.webp");
+  rock("rock.jpg"),
+  paper("paper.jpg"),
+  scissors("scissors.jpg"),
+  lizard("lizard.jpg"),
+  spock("spock.jpg");
 
   final String img;
 
