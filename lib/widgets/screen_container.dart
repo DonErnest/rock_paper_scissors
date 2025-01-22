@@ -9,7 +9,9 @@ class ScreenContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        decoration: const BoxDecoration(),
+        decoration: const BoxDecoration(
+          color: Color.fromRGBO(247, 249, 249, 1),
+        ),
         child: Center(
           child: widget,
         ),

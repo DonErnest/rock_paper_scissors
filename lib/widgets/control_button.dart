@@ -20,6 +20,7 @@ class ControlButtonWidget extends StatelessWidget {
           onPressed(userMove),
         },
         style: ElevatedButton.styleFrom(
+          backgroundColor: Color.fromRGBO(32, 129, 195, 1),
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(5),
               side: BorderSide(color: Colors.black, width: 3)),
@@ -27,7 +28,7 @@ class ControlButtonWidget extends StatelessWidget {
         ),
         child: Image.asset(
           "assets/images/${userMove.img}",
-          width: 150,
+          width: 100,
         ),
       ),
     );
